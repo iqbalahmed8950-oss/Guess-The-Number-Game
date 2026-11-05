@@ -1,0 +1,134 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a4fff7 0%, hsl(143, 100%, 70%) 100%);
+}
+.container{
+    border: 1px solid #ccc;
+    width: 900px;
+    height: 400px;
+    background: linear-gradient(135deg, #69719c 0%, #a095ac 100%);
+    border-radius: 10px 100px 100px 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 100px 20px 20px #0000;
+}
+.container:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+h1{
+    font-size: 50px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.Tutorial{
+    font-size: 25px;
+    color: #4b4545;
+    font-family: Arial, sans-serif;
+}
+#guessInput{
+    width: 600px;
+    height: 25px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #747474;
+}
+#checkGuess{
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    font-size: 23px;
+    border-radius: 8px;
+    border: none;
+    background-color: #777777;
+    color: white;
+    cursor: pointer;
+}
+#checkGuess:hover{
+    background-color: rgb(83, 80, 80);
+}
+#message{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+        height: auto;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #guessInput {
+        width: 90%;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 0px;
+        border-radius: 0px 15px 15px 15px;
+    }
+    h1 {
+        font-size: 20px;
+        padding-right: 15px;
+    }
+    .Tutorial{
+    font-size: 15px;
+    padding:12px;
+}
+    #guessInput {
+        width: 80%;
+    }
+#checkGuess{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+}
+}
+@media (max-width: 375px) {
+    .Tutorial{
+    font-size: 15px;
+    padding:12px;
+}
+    #guessInput {
+        font-size: 13px;
+        height: 18px;
+    }
+    #checkGuess{
+    width: 50px;
+    height: 18px;
+    font-size: 12px;
+}
+    #message{
+    margin-top: 12px;
+    font-size: 14px;    
+}
+}
+@media (max-width: 320px) {
+    .Tutorial{
+    font-size: 13px;
+}
+    #guessInput {
+        font-size: 12px;
+    }
+    #checkGuess{
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+}
+#message{
+    margin-top: 12px;
+    font-size: 12px;    
+}
+}
